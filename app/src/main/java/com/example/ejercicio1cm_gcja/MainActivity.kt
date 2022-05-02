@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
     fun click(view: View) {
         with(binding){
         if(!etNumero1.text.toString().isEmpty() && !etNumero2.text.toString().isEmpty() ){
-           // var area = etNumero1 * etNumero2
 
         }else{
             Toast.makeText(this@MainActivity,"",Toast.LENGTH_SHORT).show()
