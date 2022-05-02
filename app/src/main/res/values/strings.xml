@@ -3,6 +3,10 @@
     <string name="Titulo">Calculadora de Áreas</string>
     <string name="Variable1">a</string>
     <string name="Variable2">b</string>
+    <string name="AmbosValores">Por favor ingresa ambos valores</string>
+    <string name="UnValor">Se requiere un valor</string>
+    <string name="Verificar">Verificar</string>
+
 
     <string-array name="Opciones">
         <item>Operacion</item>

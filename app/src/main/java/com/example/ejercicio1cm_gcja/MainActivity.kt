@@ -4,15 +4,19 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ejercicio1cm_gcja.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var tvResultado: TextView
     private lateinit var etNumero1: EditText
     private lateinit var etNumero2: EditText
+    private lateinit var  binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val spinner = findViewById<Spinner>(R.id.SpnOperacion)
         val lista =resources.getStringArray(R.array.Opciones)
         val adaptador = ArrayAdapter(this,android.R.layout.simple_spinner_item,lista)
@@ -32,6 +36,20 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun click(view: View) {
+        if(!etNumero1.text.toString().isEmpty() && !etNumero2.text.toString().isEmpty() ){
+           // var area = etNumero1 * etNumero2
 
+        }else{
+            Toast.makeText(this,"",Toast.LENGTH_SHORT).show()
+            if(!etNumero1.text.toString().isNotEmpty() && !etNumero2.text.toString().isNotEmpty()){
+                etNumero1.error = "Por favor ingresa ambos valores"
+                etNumero2.error = "Se requiere un valor"
+            }else if (!etNumero1.text.toString().isNotEmpty()){
+                etNumero1.error = "Se requiere un valor"
+            }else {
+                etNumero2.error = "Se requiere un valor"
+            }
+        }
     }
+
 }
