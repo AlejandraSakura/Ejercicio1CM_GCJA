@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ejercicio1CM_GCJA</string>
+    <string name="Titulo">Calculadora de Áreas</string>
+    <string name="Variable1">a</string>
+    <string name="Variable2">b</string>
+
+    <string-array name="Opciones">
+        <item>Operacion</item>
+        <item>Rectangulo</item>
+        <item>Triangulo</item>
+        <item>Pentagono</item>
+    </string-array>
+</resources>
