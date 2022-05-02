@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Ejercicio1CM_GCJA</string>
     <string name="Titulo">Calculadora de Áreas</string>
+    <string name="Creadora">Jessica Alejandra González Cortés</string>
+    <string name="Version">Version 1</string>
     <string name="Variable1">a</string>
     <string name="Variable2">b</string>
     <string name="AmbosValores">Por favor ingresa ambos valores</string>

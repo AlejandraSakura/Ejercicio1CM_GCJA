@@ -29,26 +29,23 @@ class MainActivity : AppCompatActivity() {
             override fun onNothingSelected(p0: AdapterView<*>?) {}
         }
 
-        tvResultado = findViewById(R.id.tvResultado)
-        etNumero1 = findViewById(R.id.etNumero1)
-        etNumero2 = findViewById(R.id.etNumero2)
-
     }
 
     fun click(view: View) {
+        with(binding){
         if(!etNumero1.text.toString().isEmpty() && !etNumero2.text.toString().isEmpty() ){
            // var area = etNumero1 * etNumero2
 
         }else{
-            Toast.makeText(this,"",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity,"",Toast.LENGTH_SHORT).show()
             if(!etNumero1.text.toString().isNotEmpty() && !etNumero2.text.toString().isNotEmpty()){
-                etNumero1.error = "Por favor ingresa ambos valores"
-                etNumero2.error = "Se requiere un valor"
+                etNumero1.error = getString(R.string.AmbosValores)
+                etNumero2.error = getString(R.string.AmbosValores)
             }else if (!etNumero1.text.toString().isNotEmpty()){
-                etNumero1.error = "Se requiere un valor"
+                etNumero1.error = getString(R.string.UnValor)
             }else {
-                etNumero2.error = "Se requiere un valor"
-            }
+                etNumero2.error = getString(R.string.UnValor)
+            }}
         }
     }
 

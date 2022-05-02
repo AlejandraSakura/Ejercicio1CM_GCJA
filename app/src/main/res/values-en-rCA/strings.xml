@@ -7,4 +7,6 @@
     <string name="AmbosValores">Please enter both values</string>
     <string name="UnValor">A value is required</string>
     <string name="Verificar">Check</string>
+    <string name="Creadora">Jessica Alejandra González Cortés</string>
+    <string name="Version">" Version 1"</string>
 </resources>
